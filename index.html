@@ -346,5 +346,23 @@
   </div>
 </footer>
 
+<script>
+  // Nav active state: clicked link darkens + gets the teal underline, and a
+  // lightweight scroll-spy keeps the highlight on the section in view.
+  (() => {
+    const links = [...document.querySelectorAll('.nav-link')];
+    const setActive = (link) => links.forEach(l => l.classList.toggle('active', l === link));
+    links.forEach(l => l.addEventListener('click', () => setActive(l)));
+
+    const byId = {};
+    links.forEach(l => { const id = (l.getAttribute('href') || '').slice(1); if (id) byId[id] = l; });
+    const observer = new IntersectionObserver(entries => {
+      const visible = entries.filter(e => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (visible && byId[visible.target.id]) setActive(byId[visible.target.id]);
+    }, { rootMargin: '-30% 0px -55% 0px' });
+    Object.keys(byId).forEach(id => { const el = document.getElementById(id); if (el) observer.observe(el); });
+  })();
+</script>
+
 </body>
 </html>
