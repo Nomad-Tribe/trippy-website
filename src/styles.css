@@ -131,21 +131,21 @@ img{max-width:100%;}
 .modes-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px;}
 @media(max-width:760px){.modes-grid{grid-template-columns:1fr;}}
 .mode-card{border-radius:24px;padding:36px;position:relative;overflow:hidden;}
-.mode-card.diy{background:linear-gradient(145deg,#fff,#f2fbf8);border:1.5px solid var(--teal-100);}
-.mode-card.hosted{background:linear-gradient(145deg,#fff,#fff6f2);border:1.5px solid #ffc9ac;}
+.mode-card.diy{background:linear-gradient(145deg,#fff,#fff6f2);border:1.5px solid #ffc9ac;}
+.mode-card.hosted{background:linear-gradient(145deg,#fff,#f2fbf8);border:1.5px solid var(--teal-100);}
 .mode-tag{display:inline-flex;align-items:center;gap:6px;font:700 11px var(--fbody);letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;border-radius:99px;margin-bottom:20px;}
-.mode-tag.diy{background:var(--teal-50);color:var(--teal-700);}
-.mode-tag.hosted{background:var(--coral-50);color:var(--coral-600);}
+.mode-tag.diy{background:var(--coral-50);color:var(--coral-600);}
+.mode-tag.hosted{background:var(--teal-50);color:var(--teal-700);}
 .mode-h3{font-family:var(--fhead);font-weight:700;font-size:clamp(22px,3vw,28px);color:var(--ink);margin-bottom:10px;line-height:1.15;}
 .mode-desc{font-size:15px;color:var(--muted);line-height:1.6;margin-bottom:24px;}
 .mode-steps{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
 .mode-step{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--ink);}
 .mode-step-dot{width:22px;height:22px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;font-weight:700;}
-.mode-step-dot.diy{background:var(--teal-500);color:#fff;}
-.mode-step-dot.hosted{background:var(--coral-500);color:#fff;}
+.mode-step-dot.diy{background:var(--coral-500);color:#fff;}
+.mode-step-dot.hosted{background:var(--teal-500);color:#fff;}
 .mode-cta{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:12px;font:700 14px var(--fbody);cursor:pointer;transition:filter .15s;}
-.mode-cta.diy{background:var(--teal-500);color:#fff;}
-.mode-cta.hosted{background:var(--coral-500);color:#fff;}
+.mode-cta.diy{background:var(--coral-500);color:#fff;}
+.mode-cta.hosted{background:var(--teal-500);color:#fff;}
 .mode-cta:hover{filter:brightness(.93);}
 .mode-decoration{position:absolute;bottom:-20px;right:-20px;font-size:100px;opacity:.06;}
 
