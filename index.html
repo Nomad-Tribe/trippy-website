@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/src/styles.css" />
 </head>
 <body>
-<!-- Dev links point at the local app; in production these map to the app + partner domains. -->
+<!-- CTA links open Early Access / Partner Onboarding modals via data-modal attributes. -->
 
 <!-- ══ NAV ══════════════════════════════════════════════════ -->
 <nav class="nav">
@@ -27,7 +27,7 @@
       <a href="#modes" class="nav-link">For travellers</a>
       <a href="#partners" class="nav-link partner">For partners</a>
     </div>
-    <a href="/" class="nav-cta"><i class="ph-bold ph-arrow-right" style="font-size:15px;"></i> Open Trippy</a>
+    <a href="#" data-modal="traveller" class="nav-cta"><i class="ph-bold ph-arrow-right" style="font-size:15px;"></i> Open Trippy</a>
   </div>
 </nav>
 
@@ -47,7 +47,7 @@
     <h1 class="hero-h1 fade-up-2">Going solo doesn't<br>mean going <em>alone.</em></h1>
     <p class="hero-sub fade-up-3">Find travellers heading to Spiti, Manali, or Goa on the same dates as you. Or join a curated group trip leaving this weekend. Entirely your choice.</p>
     <div class="hero-badges fade-up-3">
-      <a href="/" class="badge-btn" style="padding:14px 28px;border-radius:14px;font-size:16px;gap:10px;">
+      <a href="#" data-modal="traveller" class="badge-btn" style="padding:14px 28px;border-radius:14px;font-size:16px;gap:10px;">
         <i class="ph-bold ph-globe" style="font-size:22px;"></i>
         <div class="badge-text">
           <span class="badge-sup">Free · Works on any browser</span>
@@ -187,7 +187,7 @@
           <div class="mode-step"><div class="mode-step-dot diy">2</div><span>See who else is checking in — filter by travel style, gender, age, interests</span></div>
           <div class="mode-step"><div class="mode-step-dot diy">3</div><span>Form a group, build your shared itinerary, split costs as you go</span></div>
         </div>
-        <a href="/login?mode=signup" class="mode-cta diy">Start your DIY trip <i class="ph-bold ph-arrow-right" style="font-size:14px;"></i></a>
+        <a href="#" data-modal="traveller" class="mode-cta diy">Start your DIY trip <i class="ph-bold ph-arrow-right" style="font-size:14px;"></i></a>
         <div class="mode-decoration">🗺️</div>
       </div>
       <div class="mode-card hosted">
@@ -199,7 +199,7 @@
           <div class="mode-step"><div class="mode-step-dot hosted">2</div><span>See verified reviews, detailed itinerary, what's included, and who's going</span></div>
           <div class="mode-step"><div class="mode-step-dot hosted">3</div><span>Book directly with the operator — Trippy handles discovery, they handle the trip</span></div>
         </div>
-        <a href="/" class="mode-cta hosted">Browse group trips <i class="ph-bold ph-arrow-right" style="font-size:14px;"></i></a>
+        <a href="#" data-modal="traveller" class="mode-cta hosted">Browse group trips <i class="ph-bold ph-arrow-right" style="font-size:14px;"></i></a>
         <div class="mode-decoration">🏔️</div>
       </div>
     </div>
@@ -217,10 +217,10 @@
           Planning a ride to Leh-Ladakh, Spiti, or the Western Ghats? Set up your bike or car profile, match with riders on identical dates, share 60-second live GPS tracking, log waypoint check-ins, and use emergency SOS safety alerts.
         </p>
         <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-          <a href="/adventures" class="mode-cta diy" style="background: var(--teal-500); color: #fff; border: none; padding: 12px 22px; font-size: 14px;">
+          <a href="#" data-modal="traveller" class="mode-cta diy" style="background: var(--teal-500); color: #fff; border: none; padding: 12px 22px; font-size: 14px;">
             Explore Bike & Road Trips <i class="ph-bold ph-arrow-right" style="font-size:14px;"></i>
           </a>
-          <a href="/partner" class="mode-cta hosted" style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 12px 20px; font-size: 14px;">
+          <a href="#" data-modal="partner" class="mode-cta hosted" style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 12px 20px; font-size: 14px;">
             Host a Bike Trip as Partner <i class="ph-bold ph-arrow-right" style="font-size:14px;"></i>
           </a>
         </div>
@@ -268,7 +268,7 @@
           <div class="hm-info"><div class="hm-name">Anika S.</div><div class="hm-dates">Aug 13–16 · Solo first-timer</div></div>
           <span class="hm-score">91%</span>
         </div>
-        <div class="hm-more">+ 3 more members · <a href="/hostels" style="text-decoration:underline;color:inherit;">See all</a></div>
+        <div class="hm-more">+ 3 more members · <a href="#" data-modal="traveller" style="text-decoration:underline;color:inherit;">See all</a></div>
       </div>
     </div>
   </div>
@@ -289,8 +289,8 @@
           <div class="ps"><div class="ps-num">02</div><div class="ps-title">Build your trip &amp; fleet info</div><div class="ps-desc">Add itinerary, vehicle fleet (Himalayan 450, SUV support van, mechanic crew), pricing, and payment links.</div></div>
           <div class="ps"><div class="ps-num">03</div><div class="ps-title">Go live, get discovered</div><div class="ps-desc">Your trip appears in search results for 12,000+ travellers &amp; riders searching your destination.</div></div>
         </div>
-        <a href="/partner" class="partner-cta"><i class="ph-bold ph-rocket-launch" style="font-size:15px;"></i> Host your first trip free</a>
-        <a href="/partner" class="partner-secondary">Learn more about Partner CRM <i class="ph-bold ph-arrow-right" style="font-size:13px;"></i></a>
+        <a href="#" data-modal="partner" class="partner-cta"><i class="ph-bold ph-rocket-launch" style="font-size:15px;"></i> Host your first trip free</a>
+        <a href="#" data-modal="partner" class="partner-secondary">Learn more about Partner CRM <i class="ph-bold ph-arrow-right" style="font-size:13px;"></i></a>
       </div>
     </div>
   </div>
@@ -303,7 +303,7 @@
     <h2 class="finalcta-h2">Your next adventure is waiting.<br>So are the <em>people</em> you'll meet on it.</h2>
     <p class="finalcta-sub">12,400 solo travellers have already found their travel tribe on Trippy. The next one could be your companion to Spiti, Ladakh, or wherever you've been putting off going.</p>
     <div class="finalcta-stores">
-      <a href="/" class="badge-btn" style="padding:14px 28px;border-radius:14px;font-size:16px;gap:10px;">
+      <a href="#" data-modal="traveller" class="badge-btn" style="padding:14px 28px;border-radius:14px;font-size:16px;gap:10px;">
         <i class="ph-bold ph-globe" style="font-size:22px;"></i>
         <div class="badge-text">
           <span class="badge-sup">Free · Works on any browser</span>
@@ -335,20 +335,20 @@
         <div class="footer-col-title">For travellers</div>
         <div class="footer-links">
           <a href="#how-it-works">How it works</a>
-          <a href="/login?mode=signup">Find companions</a>
-          <a href="/">Browse group trips</a>
-          <a href="/login?mode=signup">DIY trip builder</a>
-          <a href="/hostels">Partner hostels</a>
+          <a href="#" data-modal="traveller">Find companions</a>
+          <a href="#" data-modal="traveller">Browse group trips</a>
+          <a href="#" data-modal="traveller">DIY trip builder</a>
+          <a href="#" data-modal="traveller">Partner hostels</a>
         </div>
       </div>
       <div>
         <div class="footer-col-title">For partners</div>
         <div class="footer-links">
           <a href="#partners">List your trips</a>
-          <a href="/partner">Partner CRM</a>
+          <a href="#" data-modal="partner">Partner CRM</a>
           <a href="#partners">Partner stories</a>
           <a href="#partners">Pricing</a>
-          <a href="/partner">Sign up →</a>
+          <a href="#" data-modal="partner">Sign up →</a>
         </div>
       </div>
       <div>
@@ -365,15 +365,90 @@
     <div class="footer-bottom">
       <span class="footer-legal">© 2026 Trippy · Travel solo, never alone · Made in India 🇮🇳</span>
       <div class="footer-stores">
-        <a href="/" class="fstore"><i class="ph-bold ph-globe" style="font-size:14px;"></i> Open Trippy</a>
+        <a href="#" data-modal="traveller" class="fstore"><i class="ph-bold ph-globe" style="font-size:14px;"></i> Open Trippy</a>
       </div>
     </div>
   </div>
 </footer>
 
+<!-- ══ EARLY ACCESS MODAL ═════════════════════════════════════ -->
+<div class="modal-overlay" id="modal-traveller">
+  <div class="modal-card">
+    <button class="modal-close" aria-label="Close"><i class="ph-bold ph-x" style="font-size:18px;"></i></button>
+    <div class="modal-form-view">
+      <div class="modal-icon">🧭</div>
+      <h3 class="modal-title">Get Early Access</h3>
+      <p class="modal-desc">Be among the first to find your travel tribe. We'll notify you the moment Trippy goes live.</p>
+      <form class="modal-form" data-type="traveller">
+        <input type="text" name="name" placeholder="Your name" required class="modal-input" />
+        <input type="email" name="email" placeholder="Email address" required class="modal-input" />
+        <input type="text" name="destination" placeholder="Dream destination (e.g., Spiti, Ladakh, Goa)" class="modal-input" />
+        <select name="style" class="modal-input modal-select">
+          <option value="" disabled selected>Travel style</option>
+          <option>Solo trekker</option>
+          <option>Backpacker</option>
+          <option>Motorcycle rider</option>
+          <option>Road tripper</option>
+          <option>Beach & chill</option>
+          <option>Cultural explorer</option>
+        </select>
+        <button type="submit" class="modal-submit traveller">
+          <i class="ph-bold ph-sparkle" style="font-size:16px;"></i> Join the waitlist
+        </button>
+      </form>
+      <p class="modal-fine">No spam, ever. We'll only email you when Trippy launches.</p>
+    </div>
+    <div class="modal-success-view" style="display:none;">
+      <div class="modal-success-icon">✨</div>
+      <h3 class="modal-title">You're on the list!</h3>
+      <p class="modal-desc">We'll reach out as soon as Trippy launches. Get ready to find your travel tribe.</p>
+      <button class="modal-submit traveller" onclick="closeModal()" style="margin-top:20px;">
+        <i class="ph-bold ph-arrow-left" style="font-size:14px;"></i> Back to Trippy
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ PARTNER ONBOARDING MODAL ══════════════════════════════ -->
+<div class="modal-overlay" id="modal-partner">
+  <div class="modal-card">
+    <button class="modal-close" aria-label="Close"><i class="ph-bold ph-x" style="font-size:18px;"></i></button>
+    <div class="modal-form-view">
+      <div class="modal-icon">💼</div>
+      <h3 class="modal-title">Partner with Trippy</h3>
+      <p class="modal-desc">List your group trips, bike expeditions, or hostel with 12,000+ active travellers. Zero listing fees.</p>
+      <form class="modal-form" data-type="partner">
+        <input type="text" name="name" placeholder="Your name" required class="modal-input" />
+        <input type="email" name="email" placeholder="Business email" required class="modal-input" />
+        <input type="text" name="org" placeholder="Organisation / community name" required class="modal-input" />
+        <select name="type" class="modal-input modal-select">
+          <option value="" disabled selected>Operator type</option>
+          <option>Travel community</option>
+          <option>Motorcycle / riding club</option>
+          <option>Hostel / property</option>
+          <option>Trek / adventure operator</option>
+          <option>Road trip organiser</option>
+          <option>Other</option>
+        </select>
+        <button type="submit" class="modal-submit partner">
+          <i class="ph-bold ph-rocket-launch" style="font-size:16px;"></i> Start hosting free
+        </button>
+      </form>
+      <p class="modal-fine">No contracts. No listing fees. Our team will reach out within 24 hours.</p>
+    </div>
+    <div class="modal-success-view" style="display:none;">
+      <div class="modal-success-icon">🚀</div>
+      <h3 class="modal-title">We'll be in touch!</h3>
+      <p class="modal-desc">Our partnerships team will reach out within 24 hours to get you set up on Trippy.</p>
+      <button class="modal-submit partner" onclick="closeModal()" style="margin-top:20px;">
+        <i class="ph-bold ph-arrow-left" style="font-size:14px;"></i> Back to Trippy
+      </button>
+    </div>
+  </div>
+</div>
+
 <script>
-  // Nav active state: clicked link darkens + gets the teal underline, and a
-  // lightweight scroll-spy keeps the highlight on the section in view.
+  // ── Nav scroll-spy ──────────────────────────────────────────
   (() => {
     const links = [...document.querySelectorAll('.nav-link')];
     const setActive = (link) => links.forEach(l => l.classList.toggle('active', l === link));
@@ -387,6 +462,65 @@
     }, { rootMargin: '-30% 0px -55% 0px' });
     Object.keys(byId).forEach(id => { const el = document.getElementById(id); if (el) observer.observe(el); });
   })();
+
+  // ── Modal system ────────────────────────────────────────────
+  let activeModal = null;
+
+  function openModal(type) {
+    const overlay = document.getElementById('modal-' + type);
+    if (!overlay) return;
+    // Reset to form view
+    overlay.querySelector('.modal-form-view').style.display = '';
+    overlay.querySelector('.modal-success-view').style.display = 'none';
+    const form = overlay.querySelector('form');
+    if (form) form.reset();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    activeModal = overlay;
+    // Focus the first input after animation
+    setTimeout(() => { const inp = overlay.querySelector('.modal-input'); if (inp) inp.focus(); }, 250);
+  }
+
+  function closeModal() {
+    if (!activeModal) return;
+    activeModal.classList.remove('open');
+    document.body.style.overflow = '';
+    activeModal = null;
+  }
+
+  // Event delegation: any click on [data-modal] opens the right modal
+  document.addEventListener('click', (e) => {
+    const trigger = e.target.closest('[data-modal]');
+    if (trigger) {
+      e.preventDefault();
+      openModal(trigger.dataset.modal);
+    }
+  });
+
+  // Close on overlay click (outside the card)
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
+  });
+
+  // Close buttons
+  document.querySelectorAll('.modal-close').forEach(btn => {
+    btn.addEventListener('click', closeModal);
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+  // Form submission → success state
+  document.querySelectorAll('.modal-form').forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const card = form.closest('.modal-card');
+      card.querySelector('.modal-form-view').style.display = 'none';
+      const success = card.querySelector('.modal-success-view');
+      success.style.display = '';
+      success.style.animation = 'fadeUp .4s ease both';
+    });
+  });
 </script>
 
 </body>
